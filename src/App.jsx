@@ -68,7 +68,7 @@ export default function Portfolio() {
       description: "ML-powered movie recommendation engine using TF-IDF and cosine similarity with 70%+ match accuracy and multi-language support.",
       github: "https://github.com/aditinagendra05/Movie-recommendation",
       demo: "#",
-      gradient: "from-blue-500 to-cyan-500"
+      gradient: "from-purple-500 to-pink-500"
     }
   ];
 
@@ -113,13 +113,13 @@ export default function Portfolio() {
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         {/* Animated gradient orbs */}
         <div className={`absolute top-0 left-1/4 w-96 h-96 rounded-full blur-3xl opacity-40 animate-float ${
-          darkMode ? 'bg-gradient-to-r from-gray-700 to-gray-600' : 'bg-gradient-to-r from-gray-300 to-gray-400'
+          darkMode ? 'bg-gradient-to-r from-purple-700 to-purple-600' : 'bg-gradient-to-r from-purple-300 to-purple-400'
         }`}></div>
         <div className={`absolute top-1/3 right-1/4 w-96 h-96 rounded-full blur-3xl opacity-30 animate-float-delayed ${
-          darkMode ? 'bg-gradient-to-r from-gray-600 to-gray-500' : 'bg-gradient-to-r from-gray-400 to-gray-300'
+          darkMode ? 'bg-gradient-to-r from-purple-600 to-purple-500' : 'bg-gradient-to-r from-purple-400 to-purple-300'
         }`}></div>
         <div className={`absolute bottom-0 left-1/2 w-96 h-96 rounded-full blur-3xl opacity-35 animate-float-slow ${
-          darkMode ? 'bg-gradient-to-r from-gray-800 to-gray-700' : 'bg-gradient-to-r from-gray-500 to-gray-400'
+          darkMode ? 'bg-gradient-to-r from-purple-800 to-purple-700' : 'bg-gradient-to-r from-purple-500 to-purple-400'
         }`}></div>
         
         {/* Glassmorphism overlay - this creates the frosted glass effect */}
@@ -132,7 +132,7 @@ export default function Portfolio() {
 
       {/* Custom Cursor */}
       <div 
-        className="fixed w-6 h-6 border-2 border-cyan-400 rounded-full pointer-events-none z-50 mix-blend-difference transition-transform duration-150"
+        className="fixed w-6 h-6 border-2 border-purple-400 rounded-full pointer-events-none z-50 mix-blend-difference transition-transform duration-150"
         style={{ 
           left: `${mousePos.x}px`, 
           top: `${mousePos.y}px`,
@@ -145,7 +145,7 @@ export default function Portfolio() {
         scrolled ? (darkMode ? 'bg-black/20 backdrop-blur-2xl border-b border-white/10' : 'bg-white/20 backdrop-blur-2xl border-b border-black/10') : ''
       }`}>
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="text-xl font-bold tracking-tight bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+          <div className="text-xl font-bold tracking-tight bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
             Aditi.dev
           </div>
           <button
@@ -165,33 +165,33 @@ export default function Portfolio() {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="animate-hero-appear">
             <div className="inline-block mb-4 px-4 py-2 rounded-full bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 backdrop-blur-sm">
-              <span className="text-sm font-medium bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+              <span className="text-sm font-medium bg-gradient-to-r from-purple-400 to-purple-500 bg-clip-text text-transparent">
                 ✨ Available for opportunities
               </span>
             </div>
             
             <h1 className="text-7xl md:text-8xl font-black mb-6 tracking-tight">
-              <span className="bg-gradient-to-r from-white via-cyan-200 to-blue-400 bg-clip-text text-transparent animate-gradient">
+              <span className="bg-gradient-to-r from-white via-purple-800 to-purple-1000 bg-clip-text text-transparent animate-gradient">
                 Aditi Nagendra
               </span>
             </h1>
             
             <p className={`text-3xl md:text-4xl mb-8 font-semibold ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
               <span className="inline-block animate-slide-in-1">Computer Science</span>
-              <span className="inline-block mx-3 text-cyan-400">•</span>
+              <span className="inline-block mx-3 text-purple-400">•</span>
               <span className="inline-block animate-slide-in-2">Data Science</span>
-              <span className="inline-block mx-3 text-blue-400">•</span>
+              <span className="inline-block mx-3 text-purple-400">•</span>
               <span className="inline-block animate-slide-in-3">ML Enthusiast</span>
             </p>
             
-            <p className={`text-xl md:text-2xl max-w-3xl mb-10 leading-relaxed ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+            <p className={`text-xl md:text-2xl max-w-3xl mb-10 leading-relaxed ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
               Building intelligent systems that bridge data and innovation.
             </p>
 
             <div className="flex flex-wrap gap-4">
               <a
                 href="#contact"
-                className="group px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-xl font-semibold hover:shadow-2xl hover:shadow-cyan-500/50 transition-all hover:scale-105 flex items-center gap-2"
+                className="group px-8 py-4 bg-gradient-to-r from-purple-400 to-blue-500 rounded-xl font-semibold hover:shadow-2xl hover:shadow-cyan-500/50 transition-all hover:scale-105 flex items-center gap-2"
                 onMouseEnter={() => setCursorVariant('hover')}
                 onMouseLeave={() => setCursorVariant('default')}
               >
@@ -201,7 +201,7 @@ export default function Portfolio() {
               <a
                 href="#projects"
                 className={`px-8 py-4 rounded-xl font-semibold border-2 transition-all hover:scale-105 ${
-                  darkMode ? 'border-gray-700 hover:bg-gray-800' : 'border-gray-300 hover:bg-gray-100'
+                  darkMode ? 'border-white-200 hover:bg-white-800' : 'border-white-300 hover:bg-white-100'
                 }`}
                 onMouseEnter={() => setCursorVariant('hover')}
                 onMouseLeave={() => setCursorVariant('default')}
@@ -221,7 +221,7 @@ export default function Portfolio() {
           } ${
             darkMode ? 'bg-white/5 border-white/10' : 'bg-black/5 border-black/10'
           }`} data-section="about">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 tracking-tight bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 tracking-tight bg-gradient-to-r from-purple-400 to-purple-500 bg-clip-text text-transparent">
               About Me
             </h2>
             <div className={`text-lg leading-relaxed max-w-4xl space-y-5 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
@@ -245,10 +245,10 @@ export default function Portfolio() {
           <div className={`animate-on-scroll ${
             visibleSections.has('projects') ? 'slide-up-active' : ''
           }`} data-section="projects">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight bg-gradient-to-r from-purple-400 to-purple-500 bg-clip-text text-transparent">
               Featured Projects
             </h2>
-            <p className={`text-xl mb-12 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+            <p className={`text-xl mb-12 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
               Building the future, one project at a time
             </p>
             
@@ -260,8 +260,8 @@ export default function Portfolio() {
                     visibleSections.has('projects') ? 'project-card-active' : ''
                   } ${
                     darkMode 
-                      ? 'bg-white/5 border-white/10 hover:border-cyan-500/50 hover:shadow-2xl hover:shadow-cyan-500/20' 
-                      : 'bg-black/5 border-black/10 hover:border-blue-400 hover:shadow-2xl'
+                      ? 'bg-white/5 border-white/10 hover:border-white-500/50 hover:shadow-2xl hover:shadow-white-500/20' 
+                      : 'bg-black/5 border-black/10 hover:border-white-400 hover:shadow-2xl'
                   }`}
                   style={{ animationDelay: `${idx * 150}ms` }}
                   data-section="projects"
@@ -272,7 +272,7 @@ export default function Portfolio() {
                   <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
                   
                   <div className="relative z-10">
-                    <h3 className="text-2xl font-bold mb-4 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-cyan-400 group-hover:to-blue-500 transition-all">
+                    <h3 className="text-2xl font-bold mb-4 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-purple-400 group-hover:to-purple-500 transition-all">
                       {project.title}
                     </h3>
                     
@@ -281,7 +281,7 @@ export default function Portfolio() {
                         <span
                           key={i}
                           className={`text-xs px-3 py-1.5 rounded-lg font-medium transition-all hover:scale-110 ${
-                            darkMode ? 'bg-gray-800 text-cyan-400 border border-gray-700' : 'bg-gray-100 text-blue-600 border border-gray-300'
+                            darkMode ? 'bg-white-800 text-purple-400 border border-purple-700' : 'bg-gray-100 text-purple-600 border border-purple-300'
                           }`}
                         >
                           {tech}
@@ -289,7 +289,7 @@ export default function Portfolio() {
                       ))}
                     </div>
                     
-                    <p className={`mb-6 text-base leading-relaxed ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                    <p className={`mb-6 text-base leading-relaxed ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
                       {project.description}
                     </p>
                     
@@ -297,7 +297,7 @@ export default function Portfolio() {
                       <a
                         href={project.github}
                         className={`flex items-center gap-2 text-sm font-medium hover:gap-3 transition-all ${
-                          darkMode ? 'text-cyan-400 hover:text-cyan-300' : 'text-blue-600 hover:text-blue-700'
+                          darkMode ? 'text-purple-400 hover:text-purple-300' : 'text-blue-600 hover:text-purple-700'
                         }`}
                       >
                         <Github size={18} /> View Code
@@ -305,7 +305,7 @@ export default function Portfolio() {
                       <a
                         href={project.demo}
                         className={`flex items-center gap-2 text-sm font-medium hover:gap-3 transition-all ${
-                          darkMode ? 'text-cyan-400 hover:text-cyan-300' : 'text-blue-600 hover:text-blue-700'
+                          darkMode ? 'text-purple-400 hover:text-purple-300' : 'text-blue-600 hover:text-purple-700'
                         }`}
                       >
                         <ExternalLink size={18} /> Live Demo
@@ -325,18 +325,18 @@ export default function Portfolio() {
           <div className={`animate-on-scroll ${
             visibleSections.has('experience') ? 'slide-up-active' : ''
           }`} data-section="experience">
-            <h2 className="text-4xl md:text-5xl font-bold mb-12 tracking-tight bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-12 tracking-tight bg-gradient-to-r from-purple-400 to-purple-500 bg-clip-text text-transparent">
               Experience & Leadership
             </h2>
             
             <div className={`group p-10 rounded-2xl backdrop-blur-xl border transition-all duration-500 hover:scale-[1.02] ${
-              darkMode ? 'bg-white/5 border-white/10 hover:border-cyan-500/50 hover:shadow-2xl hover:shadow-cyan-500/20' : 'bg-black/5 border-black/10 hover:border-blue-400 hover:shadow-2xl'
+              darkMode ? 'bg-white/5 border-white/10 hover:border-white-500/50 hover:shadow-2xl hover:shadow-white-500/20' : 'bg-black/5 border-black/10 hover:border-white-400 hover:shadow-2xl'
             }`}
             onMouseEnter={() => setCursorVariant('hover')}
             onMouseLeave={() => setCursorVariant('default')}>
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
                 <div>
-                  <h3 className="text-3xl font-bold mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-cyan-400 group-hover:to-blue-500 transition-all">
+                  <h3 className="text-3xl font-bold mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-purple-400 group-hover:to-purple-500 transition-all">
                     Google Developer Groups On Campus Lead
                   </h3>
                   <p className={`text-lg ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
@@ -347,15 +347,15 @@ export default function Portfolio() {
               
               <ul className={`space-y-4 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
                 <li className="flex gap-4 items-start group/item">
-                  <span className="mt-2 min-w-[8px] h-[8px] rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 group-hover/item:scale-150 transition-transform"></span>
+                  <span className="mt-2 min-w-[8px] h-[8px] rounded-full bg-gradient-to-r from-purple-400 to-purple-500 group-hover/item:scale-150 transition-transform"></span>
                   <span className="text-lg">Led a team of 50+ members in organizing technical workshops and hackathons</span>
                 </li>
                 <li className="flex gap-4 items-start group/item">
-                  <span className="mt-2 min-w-[8px] h-[8px] rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 group-hover/item:scale-150 transition-transform"></span>
+                  <span className="mt-2 min-w-[8px] h-[8px] rounded-full bg-gradient-to-r from-purple-400 to-purple-500 group-hover/item:scale-150 transition-transform"></span>
                   <span className="text-lg">Grew community engagement by 200% through strategic initiatives</span>
                 </li>
                 <li className="flex gap-4 items-start group/item">
-                  <span className="mt-2 min-w-[8px] h-[8px] rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 group-hover/item:scale-150 transition-transform"></span>
+                  <span className="mt-2 min-w-[8px] h-[8px] rounded-full bg-gradient-to-r from-purple-400 to-purple-500 group-hover/item:scale-150 transition-transform"></span>
                   <span className="text-lg">Partnered with industry professionals to deliver real-world project guidance</span>
                 </li>
               </ul>
@@ -370,7 +370,7 @@ export default function Portfolio() {
           <div className={`animate-on-scroll ${
             visibleSections.has('skills') ? 'slide-up-active' : ''
           }`} data-section="skills">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight bg-gradient-to-r from-purple-400 to-purple-500 bg-clip-text text-transparent">
               Technical Arsenal
             </h2>
             <p className={`text-xl mb-12 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
@@ -385,8 +385,8 @@ export default function Portfolio() {
                     visibleSections.has('skills') ? 'skill-category-active' : ''
                   } ${
                     darkMode 
-                      ? 'bg-white/5 border-white/10 hover:border-cyan-500/50 hover:shadow-2xl hover:shadow-cyan-500/20' 
-                      : 'bg-black/5 border-black/10 hover:border-blue-400 hover:shadow-2xl'
+                      ? 'bg-white/5 border-white/10 hover:border-purple-500/50 hover:shadow-2xl hover:shadow-purple-500/20' 
+                      : 'bg-black/5 border-black/10 hover:border-purple-400 hover:shadow-2xl'
                   }`}
                   style={{ animationDelay: `${catIdx * 100}ms` }}
                   data-section="skills"
@@ -412,8 +412,8 @@ export default function Portfolio() {
                         key={skillIdx}
                         className={`px-3 py-2 rounded-lg text-sm font-medium transition-all hover:scale-110 hover:-translate-y-1 ${
                           darkMode 
-                            ? 'bg-gray-800/70 text-gray-200 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-600 hover:text-white' 
-                            : 'bg-gray-100 text-gray-700 border border-gray-300 hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 hover:text-white hover:border-transparent'
+                            ? 'bg-gray-800/70 text-gray-200 hover:bg-gradient-to-r hover:from-purple-500 hover:to-purple-600 hover:text-white' 
+                            : 'bg-gray-100 text-gray-700 border border-gray-300 hover:bg-gradient-to-r hover:from-purple-500 hover:to-purple-500 hover:text-white hover:border-transparent'
                         }`}
                       >
                         {skill}
@@ -436,7 +436,7 @@ export default function Portfolio() {
             <div className={`rounded-3xl p-12 backdrop-blur-xl border text-center ${
               darkMode ? 'bg-white/5 border-white/10' : 'bg-black/5 border-black/10'
             }`}>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight bg-gradient-to-r from-purple-400 to-purple-500 bg-clip-text text-transparent">
                 Let's Build Something Amazing
               </h2>
               <p className={`text-xl mb-10 max-w-2xl mx-auto ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
@@ -449,8 +449,8 @@ export default function Portfolio() {
                   href="mailto:aditinagendra7@gmail.com"
                   className={`group flex items-center gap-3 px-8 py-4 rounded-xl border-2 font-semibold transition-all hover:scale-105 ${
                     darkMode 
-                      ? 'border-cyan-500 hover:bg-cyan-500 text-cyan-400 hover:text-white hover:shadow-lg hover:shadow-cyan-500/50' 
-                      : 'border-blue-500 hover:bg-blue-500 text-blue-600 hover:text-white hover:shadow-lg'
+                      ? 'border-white-500 hover:bg-purple-500 text-purple-400 hover:text-white hover:shadow-lg hover:shadow-purple-500/50' 
+                      : 'border-black-500 hover:bg-purple-500 text-purple-600 hover:text-white hover:shadow-lg'
                   }`}
                   onMouseEnter={() => setCursorVariant('hover')}
                   onMouseLeave={() => setCursorVariant('default')}
@@ -464,8 +464,8 @@ export default function Portfolio() {
                   rel="noopener noreferrer"
                   className={`group flex items-center gap-3 px-8 py-4 rounded-xl border-2 font-semibold transition-all hover:scale-105 ${
                     darkMode 
-                      ? 'border-gray-700 hover:bg-gray-800 hover:border-cyan-500' 
-                      : 'border-gray-300 hover:bg-gray-50 hover:border-blue-400'
+                      ? 'border-white-500 hover:bg-purple-500 text-purple-400 hover:text-white hover:shadow-lg hover:shadow-purple-500/50' 
+                      : 'border-black-500 hover:bg-purple-500 text-purple-600 hover:text-white hover:shadow-lg'
                   }`}
                   onMouseEnter={() => setCursorVariant('hover')}
                   onMouseLeave={() => setCursorVariant('default')}
@@ -479,8 +479,8 @@ export default function Portfolio() {
                   rel="noopener noreferrer"
                   className={`group flex items-center gap-3 px-8 py-4 rounded-xl border-2 font-semibold transition-all hover:scale-105 ${
                     darkMode 
-                      ? 'border-gray-700 hover:bg-gray-800 hover:border-cyan-500' 
-                      : 'border-gray-300 hover:bg-gray-50 hover:border-blue-400'
+                      ? 'border-white-500 hover:bg-purple-500 text-purple-400 hover:text-white hover:shadow-lg hover:shadow-purple-500/50' 
+                      : 'border-black-500 hover:bg-purple-500 text-purple-600 hover:text-white hover:shadow-lg'
                   }`}
                   onMouseEnter={() => setCursorVariant('hover')}
                   onMouseLeave={() => setCursorVariant('default')}
