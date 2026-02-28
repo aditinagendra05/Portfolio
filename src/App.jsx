@@ -69,6 +69,14 @@ export default function Portfolio() {
       github: "https://github.com/aditinagendra05/Movie-recommendation",
       demo: "#",
       gradient: "from-purple-500 to-pink-500"
+    },
+    {
+      title: "Star-Linker: LEO Mesh Network Simulator",
+      tech: ["Python", "NumPy", "NetworkX", "Plotly", "Streamlit"],
+      description: "LEO satellite mesh network simulator with dynamic routing and adaptive communication protocols.",
+      github: "https://github.com/aditinagendra05/Star-Linker",
+      demo: "https://star-linker.streamlit.app/",
+      gradient: "from-purple-500 to-pink-500"
     }
   ];
 
